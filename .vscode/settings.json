@@ -1,3 +1,5 @@
 {
-    "python.pythonPath": "/mnt/c/Users/Will/Documents/projects/webet/webet/venv/bin/python3"
+    "python.pythonPath": "/mnt/c/Users/Will/Documents/projects/webet/webet/venv/bin/python3",
+    "python.linting.pylintEnabled": true,
+    "python.linting.enabled": true
 }
