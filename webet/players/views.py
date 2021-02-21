@@ -1,12 +1,24 @@
-from django.http import HttpResponse
+from django.http import HttpResponse, JsonResponse
+from django.views.decorators.http import require_http_methods
 
 from players.models import Player
 
 
+@require_http_methods(["GET"])
 def player_list(request):
-    all_players = Player.objects.all()
-    output = ', '.join([p.name for p in all_players])
-    return HttpResponse(output)
+
+    players = Player.objects.all()
+
+    response = {
+        'players': [
+            {
+                'first_name': player.first_name,
+                'last_name': player.last_name
+            } for player in players
+        ],
+        'has_more': False
+    }
+    return JsonResponse(response)
 
 
 def player_create(request):
