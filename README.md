@@ -4,12 +4,15 @@ API for betting/voting on various events
 
 ## Getting Started
 
-1. `python -m venv venv`
-2. `./venv/bin/activate`
-3. `pip install -r webet/requirements.txt`
-4. `python webet/manage.py migrate`
-5. `python webet/manage.py createsuperuser`
-6. `python webet/manage.py runserver`
+1. Create a pythong virtual environment: `python -m venv venv`
+2. Source the virtual env:
+  a. bash/zsh based shells: `source ./venv/bin/activate`
+  b. cmd: `.\vemv\Scripts\activate.bat`
+  c. PowerShell: `.\vemv\Scripts\Activate.ps1`
+3. Install dependencies: `pip install -r webet/requirements.txt`
+4. Install SQL Lite database schemas: `python webet/manage.py migrate`
+5. Create a local super user: `python webet/manage.py createsuperuser`
+6. Start the server`python webet/manage.py runserver`
 
 ## Updating
 
