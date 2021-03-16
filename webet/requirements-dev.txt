@@ -6,5 +6,7 @@ lazy-object-proxy==1.5.2
 mccabe==0.6.1
 pycodestyle==2.6.0
 pylint==2.7.0
+pylint-django==2.4.2
+pylint-plugin-utils==0.6
 toml==0.10.2
 wrapt==1.12.1
