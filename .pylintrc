@@ -33,6 +33,9 @@ limit-inference-results=100
 # usually to register additional checkers.
 load-plugins=pylint_django
 
+# Django settings for use with pylint_django
+django-settings-module=webet.settings
+
 # Pickle collected data for later comparisons.
 persistent=yes
 
@@ -138,7 +141,10 @@ disable=print-statement,
         xreadlines-attribute,
         deprecated-sys-function,
         exception-escape,
-        comprehension-escape
+        comprehension-escape,
+        missing-module-docstring,
+        missing-function-docstring,
+        missing-class-docstring
 
 # Enable the message, report, category or checker with the given id(s). You can
 # either give multiple identifier separated by comma (,) or put this option
