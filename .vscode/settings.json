@@ -1,6 +1,6 @@
 {
     "editor.rulers": [ 100 ],
-    "python.pythonPath": "/mnt/c/Users/Will/Documents/projects/webet/webet/venv/bin/python3",
+    "python.pythonPath": "venv/bin/python",
     "python.linting.pylintEnabled": true,
     "python.linting.enabled": true,
     "python.analysis.extraPaths": ["./webet"]
