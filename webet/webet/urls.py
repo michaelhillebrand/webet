@@ -17,12 +17,13 @@ from django.contrib import admin
 from django.urls import path, include
 from rest_framework import routers
 
-from events.views import EventView
+from events.views import EventView, MatchView
 from players.views import PlayerView
 
 router = routers.DefaultRouter()
-router.register(r'events', EventView, 'events')
-router.register(r'players', PlayerView, 'players')
+router.register(r'events', EventView)
+router.register(r'matches', MatchView)
+router.register(r'players', PlayerView)
 
 urlpatterns = [
     path('api/', include(router.urls)),
