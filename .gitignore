@@ -130,3 +130,6 @@ dmypy.json
 
 # PyCharm stuff
 .idea/
+
+# JS frontend folder
+webet/frontend
