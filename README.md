@@ -15,6 +15,14 @@ API for betting/voting on various events
 5. Create a local super user: `python webet/manage.py createsuperuser`
 6. Start the server`python webet/manage.py runserver`
 
+### Start up after initial setup
+
+1. Source the virtual env:
+  a. bash/zsh based shells: `source ./venv/bin/activate`
+  b. cmd: `.\venv\Scripts\activate.bat`
+  c. PowerShell: `.\venv\Scripts\Activate.ps1`
+2. Start the server`python webet/manage.py runserver`
+
 ## Updating
 
 1. Pull latest code from master branch
